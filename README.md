@@ -21,3 +21,9 @@ Aula 005 - 15/01/2021
     - cast
     - funções
 - Strings
+
+Aula 006 - 16/01/2021
+- Lista
+- Tuplas
+- Dicionários
+- Algoritmos
