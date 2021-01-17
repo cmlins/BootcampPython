@@ -1,4 +1,5 @@
 import math
+import random
 
 # 1. Algoritmo para ligar um carro (Imprimir a sequência para ligar um carro)
 passo1 = 'passo 1 - Pegar a chave'
@@ -80,7 +81,29 @@ print('\n')
 
 # 6. Algoritmo para criar uma lista usando range com 100 elementos e imprimi-la
 
+lista = [i for i in range(100)]
+
+print(lista)
+
+print('\n')
+
 # 7. Fazer um sistema de Loteria (Deve pedir o nome do usuário, pedir um número e comparar com um conjunto aleatório de número (de 0 a 100) e dizer se o usuário advinhou)
+
+nome = input('Olá, jogadore!! Digite seu nome: ')
+
+num = int(input('Agora, digite um número entre 0 e 100 e vamos tentar adivinhá-lo: '))
+
+aleatorio = random.randint(0,100)
+
+if (num >= 0 and num <= 100):
+    if (num == aleatorio):
+        print(f'Parabéns!!! Você adivinhou o número que escolhemos. Será que {num} é seu número da sorte?')
+    else:
+        print(f'Não foi dessa vez! Nosso número era {aleatorio} e você escolheu {num}. Mais sorte na próxima vez!!')
+else:
+    print(f'Você não inseriu um valor válido!')
+
+print('\n')
 
 # 8. Elabore um algoritmo em Python que receba um número inteiro e escreva na tela o número fornecido, o antecessor desse número e o sucessor desse número;
 
@@ -104,9 +127,17 @@ print('\n')
 # 12. Elabore um algoritmo em Python que:
 # a) Primeiro exiba uma mensagem de boas vindas;
 # b) Pergunte o nome do usuário;
-# c) Exiba uma mensagem dizendo uma mensagem de olá
-# seguida pelo nome do usuário seguida por outra mensagem
-# fazendo um elogio.
+# c) Exiba uma mensagem dizendo uma mensagem de olá seguida pelo nome do usuário seguida por outra mensagem fazendo um elogio.
+
+print('Olá! Bem vinde ao Elogiator!')
+
+nome = input('Insira seu nome: ')
+
+elogios = ['espetacular', 'incrível', 'inteligente', 'sagaz', '']
+
+print(f'Olá, {nome}!! Você é {random.choice(elogios)}!!!')
+
+print('\n')
 
 # 13. Fazer um cadastro de viagem (Deve pedir o nome do viajante, dar as opções de destino e imprimir a selecionada)
 
