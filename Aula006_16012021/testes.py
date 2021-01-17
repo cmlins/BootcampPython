@@ -1,9 +1,4 @@
-import random
+num = int(input('Insira um número: '))
 
-print('Olá! Bem vinde ao Elogiator!')
+print(f'O número digitado foi {num}, seu antecessor é {num - 1} e seu sucessor é {num + 1}')
 
-nome = input('Insira seu nome: ')
-
-elogios = ['espetacular', 'incrível', 'inteligente', 'sagaz', '']
-
-print(f'Olá, {nome}!! Você é {random.choice(elogios)}')
