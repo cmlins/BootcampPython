@@ -137,6 +137,7 @@ num = int(input('Insira um número: '))
 print(f'O número digitado foi {num}, seu antecessor é {num - 1} e seu sucessor é {num + 1}')
 
 print('\n')
+
 # 9. Elabore um algoritmo em Python que calcule a área e o perímetro de um círculo, sabendo que A = πr² e P=2πr.
 print('--- Exercício 9 ---\n')
 
@@ -168,6 +169,20 @@ print('\n')
 
 # 11. Fazer uma busca sequencial em uma matriz (Criar uma matriz 10 linhas e 10 colunas e pedir para o usuário fazer uma busca)
 print('--- Exercício 11 ---\n')
+
+num = int(input('Insira um número: '))
+
+matriz = [list(range(i, i+10)) for i in range(1, 100, 10)]
+
+print(matriz)
+
+for linha in range(len(matriz)):
+    for coluna in range(len(matriz[linha])):
+        if (num == matriz[linha][coluna]):
+            print(f'O número {num} está na linha {linha} e na coluna {coluna}')
+
+print('\n')
+
 # 12. Elabore um algoritmo em Python que:
 # a) Primeiro exiba uma mensagem de boas vindas;
 # b) Pergunte o nome do usuário;
