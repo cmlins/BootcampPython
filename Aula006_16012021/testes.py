@@ -1,10 +1,16 @@
-num = int(input('Insira um número: '))
-matriz = [list(range(i, i+10)) for i in range(1, 100, 10)]
+nome = input('Insira seu nome: ')
 
-print(matriz)
+print('\nDigite o número correspondente ao seu destino:\n1 - Paris;\n 2 - Londres;\n 3 - Bruxelas;\n 4 - Amsterdam')
 
-for linha in range(len(matriz)):
-    for coluna in range(len(matriz[linha])):
-        if (num == matriz[linha][coluna]):
-            print(f'O número {num} está na linha {linha} e na coluna {coluna}')
+destino = int(input())
 
+if (destino == 1):
+    print(f'{nome}, você escolheu visitar Paris!')
+elif (destino == 2):
+    print(f'{nome}, você escolheu visitar Londres!')
+elif (destino == 3):
+    print(f'{nome}, você escolheu visitar Bruxelas!')
+elif (destino == 4):
+    print(f'{nome}, você escolheu visitar Amsterdam!')
+else: 
+    print('Você não escolheu uma opção válida')
