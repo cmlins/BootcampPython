@@ -3,9 +3,11 @@ import math
 
 print('--- Exercício 9 ---\n')
 
+# função que calcula a área de um círculo
 def area(r):
     return round(math.pi * math.pow(r,r), 2)
 
+# função que calcula o perímetro de um círculo
 def perimetro(r):
     return round(2 * (math.pi) * r)
     

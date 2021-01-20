@@ -1,6 +1,7 @@
 # 4. Elabore um algoritmo em Python que leia, calcule e escreva a média aritmética entre quatro números;
 print('--- Exercício 4 ---\n')
 
+# função que retorna a média aritmética de 4 números
 def media (x, y, z, t):
     return (x + y + z + t) / 4
 

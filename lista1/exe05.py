@@ -1,6 +1,7 @@
 # 5. Algoritmo para calcular a média do aluno (Deve colocar o nome do aluno, colocar 4 notas e imprimir sua média)
 print('--- Exercício 5 ---\n')
 
+# função que retorna a média aritmética de 4 números
 def media (x, y, z, t):
     return (x + y + z + t) / 4
     

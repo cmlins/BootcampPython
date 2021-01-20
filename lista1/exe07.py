@@ -7,6 +7,7 @@ nome = input('Olá, jogadore!! Digite seu nome: ')
 
 num = int(input('Agora, digite um número inteiro entre 0 e 100 e vamos tentar adivinhá-lo: '))
 
+# gera um número aleatório entre 0 e 100
 aleatorio = random.randint(0,100)
 
 if (num >= 0 and num <= 100):

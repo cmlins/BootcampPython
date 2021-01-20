@@ -10,6 +10,8 @@ print('Olá! Bem vinde ao Elogiator!')
 
 nome = input('Insira seu nome: ')
 
+# lista de exercícios
 elogios = ['espetacular', 'incrível', 'inteligente', 'sagaz', 'uma perfeição']
 
+# random.choice() retorna um valor aleatório em uma lista
 print(f'Olá, {nome}!! Você é {random.choice(elogios)}!!!')

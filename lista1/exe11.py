@@ -7,6 +7,7 @@ print(matriz)
 
 num = int(input('Insira um número: '))
 
+# count faz o controle se o número está ou não na lista. Se estiver, ele é incrementado
 count = 0
 
 for linha in range(len(matriz)):
