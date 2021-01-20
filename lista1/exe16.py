@@ -5,7 +5,7 @@
 print('--- Exercício 16 ---\n')
 
 def add_contato (agenda_dict):
-    nome = input('Insira o nome do novo contato: ')
+    nome = input('\nInsira o nome do novo contato: ')
     tel = input('Insira o telefone do novo contato: ')
     endereco = input('Insira o endereco do novo contato: ')
     contato = {"nome" : nome, "telefone" : tel, "endereco" : endereco}
@@ -23,7 +23,7 @@ def listar_agenda (agenda_dict):
 
 def excluir_contato(agenda_dict):
     listar_agenda (agenda)
-    indice = int(input('Digite o número do contato que deseja excluir:\n'))
+    indice = int(input('\nDigite o número do contato que deseja excluir:\n'))
     del agenda_dict[indice]
 
     return (listar_agenda (agenda))
@@ -46,7 +46,8 @@ agenda = [
     }
 ]
 
-print("""Olá! Esta é sua agenda. Digite o que você opção que você gostaria de fazer:
+while True:
+    print("""\nOlá! Esta é sua agenda. Digite o que você opção que você gostaria de fazer:
 
 1 - Listar sua agenda
 2 - Inserir novo contato
@@ -54,35 +55,16 @@ print("""Olá! Esta é sua agenda. Digite o que você opção que você gostaria
 4 - Encerrar a sessão
 """)
 
-opcao = int(input())
+    opcao = int(input())
 
-while (opcao != 4):
     if (opcao == 1):
         listar_agenda (agenda)
     elif (opcao == 2):
         add_contato (agenda)
     elif (opcao == 3):    
         excluir_contato(agenda)
-    elif (opcao not in (1,2,3,4)):
-        print('Você não escolheu uma opção válida!')
-else:
-    print('Até a próxima!')
-
-
-
-
-# # acessando valores
-# print(f'dict1[1]: {dict1[1]} \n')
-
-# # atualizando dicionário
-# dict1[5] = "Isabel"
-# print(f'dict1[5]: {dict1[5]} \n')
-
-# # del() e copy() 
-# dict1copy = dict1.copy()
-
-# del dict1copy[1] #remove chave 1 do dict1
-
-# dict1copy.clear() #remove as entradas do dict1
-
-# del dict1copy #exclui dict1
+    elif (opcao == 4):
+        print ("\nAté a próxima!")
+        break
+    else:
+        print('\nVocê não escolheu uma opção válida!')
