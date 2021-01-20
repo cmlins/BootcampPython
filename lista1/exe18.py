@@ -1,0 +1,2 @@
+# 18. Fazer um sistema de compras (Deve mostrar um dicionário com os objetos (Nome, Preço e Cor), pedir o nome do usuário e fazer com o que o usuário selecione um objeto e imprimir a compra na tela)
+print('--- Exercício 18 ---\n')

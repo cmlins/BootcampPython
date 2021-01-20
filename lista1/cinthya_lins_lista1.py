@@ -79,10 +79,10 @@ print('--- Exercício 4 ---\n')
 def media (x, y, z, t):
     return (x + y + z + t) / 4
 
-num1 = int(input('Insira um número: '))
-num2 = int(input('Insira um número: '))
-num3 = int(input('Insira um número: '))
-num4 = int(input('Insira um número: '))
+num1 = float(input('Insira um número: '))
+num2 = float(input('Insira um número: '))
+num3 = float(input('Insira um número: '))
+num4 = float(input('Insira um número: '))
 
 print(f'A média aritmética de {num1}, {num2}, {num3} e {num4} é: {media(num1, num2, num3, num4)}')
 
@@ -92,10 +92,10 @@ print('\n')
 print('--- Exercício 5 ---\n')
 
 nome = input("Insira o nome do aluno: ")
-num1 = int(input('Insira a primeira nota: '))
-num2 = int(input('Insira a segunda nota: '))
-num3 = int(input('Insira a terceira nota: '))
-num4 = int(input('Insira a quarta nota: '))
+num1 = float(input('Insira a primeira nota: '))
+num2 = float(input('Insira a segunda nota: '))
+num3 = float(input('Insira a terceira nota: '))
+num4 = float(input('Insira a quarta nota: '))
 
 print(f'A média do aluno {nome} é: {media(num1, num2, num3, num4)}')
 
@@ -115,7 +115,7 @@ print('--- Exercício 7 ---\n')
 
 nome = input('Olá, jogadore!! Digite seu nome: ')
 
-num = int(input('Agora, digite um número entre 0 e 100 e vamos tentar adivinhá-lo: '))
+num = int(input('Agora, digite um número inteiro entre 0 e 100 e vamos tentar adivinhá-lo: '))
 
 aleatorio = random.randint(0,100)
 
@@ -132,7 +132,7 @@ print('\n')
 # 8. Elabore um algoritmo em Python que receba um número inteiro e escreva na tela o número fornecido, o antecessor desse número e o sucessor desse número;
 print('--- Exercício 8 ---\n')
 
-num = int(input('Insira um número: '))
+num = int(input('Insira um número inteiro: '))
 
 print(f'O número digitado foi {num}, seu antecessor é {num - 1} e seu sucessor é {num + 1}')
 
@@ -155,11 +155,11 @@ print('\n')
 # 10. Fazer uma busca sequencial em uma lista (Criar uma tupla [0....20] e pedir para o usuário fazer uma busca) retornando o índice do elemento
 print('--- Exercício 10 ---\n')
 
-num = int(input('Insira um número entre 0 e 20, inclusive 0 e 20: '))
+num = int(input('Insira um número inteiro entre 0 e 20, inclusive 0 e 20: '))
 
-lista = [i for i in range(0,21)]
+lista = tuple([i for i in range(0,21)])
 
-if (num in lista):
+if (num in lista):---->>>>> não usar isso
     indice = [i for i in range(len(lista)) if lista[i] == num]
     print(f'O número {num} está no índice {indice[0]} lista')
 else:
@@ -170,16 +170,21 @@ print('\n')
 # 11. Fazer uma busca sequencial em uma matriz (Criar uma matriz 10 linhas e 10 colunas e pedir para o usuário fazer uma busca)
 print('--- Exercício 11 ---\n')
 
-num = int(input('Insira um número: '))
-
 matriz = [list(range(i, i+10)) for i in range(1, 100, 10)]
 
 print(matriz)
 
+num = int(input('Insira um número: '))
+
+count = 0
+
 for linha in range(len(matriz)):
     for coluna in range(len(matriz[linha])):
         if (num == matriz[linha][coluna]):
-            print(f'O número {num} está na linha {linha} e na coluna {coluna}')
+            print(f'\nO número {num} está na linha {linha} e na coluna {coluna}')
+            count += 1
+
+if (count == 0): print(f'\nO número {num} não está na lista!')
 
 print('\n')
 
@@ -193,14 +198,14 @@ print('Olá! Bem vinde ao Elogiator!')
 
 nome = input('Insira seu nome: ')
 
-elogios = ['espetacular', 'incrível', 'inteligente', 'sagaz', '']
+elogios = ['espetacular', 'incrível', 'inteligente', 'sagaz', 'uma perfeição']
 
 print(f'Olá, {nome}!! Você é {random.choice(elogios)}!!!')
 
 print('\n')
 
 # 13. Fazer um cadastro de viagem (Deve pedir o nome do viajante, dar as opções de destino e imprimir a selecionada)
-print('--- Exercício 1 3---\n')
+print('--- Exercício 13---\n')
 
 nome = input('Insira seu nome: ')
 
@@ -254,7 +259,34 @@ else:
 print('\n')
 # 15. Fazer um sistema de Feira Livre(Deve imprimir uma lista com as frutas e pedir para o solicitante colocar o nome e selecionar a fruta e depois deve imprimir o nome do solicitante e a fruta)
 print('--- Exercício 15 ---\n')
+frutas = {
+    1 : "Pera",
+    2 : "Uva",
+    3 : "Maçã", 
+    4 : "Melão",
+    5 : "Mamão",
+    6 : "Banana",
+    7 : "Carambola",
+    8 : "Melancia",
+    9 : "Ameixa",
+    10 : "Caju"
+}
 
+print("As frutas disponíveis são:\n")
+
+for opcao in frutas:
+    print(f'{opcao} - {frutas[opcao]}')
+
+nome = input("\nInsira seu nome: ")
+
+fruta = int(input("Digite o número do fruta que escolheu: "))
+
+if (fruta in range(len(frutas) + 1)):
+    print(f"{nome}, você escolheu {frutas[fruta]}!")
+else: 
+    print("Você não escolheu uma opção válida")
+
+print('\n')
 # 16. Fazer um sistema de Agenda de contatos (Deve criar um dicionário com Nome, Telefone e Endereço, Imprimir os dados do dicionário, ser capaz de inserir e excluir um contato)
 print('--- Exercício 16 ---\n')
 

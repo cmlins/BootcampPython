@@ -1,9 +1,5 @@
-# 15. Fazer um sistema de Feira Livre(Deve 
-# imprimir uma lista com as frutas e 
-# pedir para o solicitante colocar o nome e 
-# selecionar a fruta e depois deve 
-# imprimir o nome do solicitante e a fruta)
-
+# 15. Fazer um sistema de Feira Livre(Deve imprimir uma lista com as frutas e pedir para o solicitante colocar o nome e selecionar a fruta e depois deve imprimir o nome do solicitante e a fruta)
+print('--- Exercício 15 ---\n')
 frutas = {
     1 : "Pera",
     2 : "Uva",
