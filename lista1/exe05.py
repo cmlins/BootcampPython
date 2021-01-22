@@ -4,8 +4,10 @@ print('--- Exercício 5 ---\n')
 # função que retorna a média aritmética de 4 números
 def media (x, y, z, t):
     return (x + y + z + t) / 4
-    
-nome = input("Insira o nome do aluno: ")
+
+print('\nVamos calcular a média das notas de um alune: \n')
+
+nome = input("Insira o nome do alune: ")
 num1 = float(input('Insira a primeira nota: '))
 num2 = float(input('Insira a segunda nota: '))
 num3 = float(input('Insira a terceira nota: '))

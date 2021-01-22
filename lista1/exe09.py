@@ -5,11 +5,25 @@ print('--- Exercício 9 ---\n')
 
 # função que calcula a área de um círculo
 def area(r):
-    return round(math.pi * math.pow(r,r), 2)
+    return round((math.pi * math.pow(r, 2)),2)
 
 # função que calcula o perímetro de um círculo
 def perimetro(r):
-    return round(2 * (math.pi) * r)
+    return (round((2 * (math.pi) * r), 2))
+
+r = int(input('Digite o raio: '))
     
-print(f'A área do círculo de raio = 3 é: {area(3)}')
-print(f'A área do círculo de raio = 3 é: {perimetro(3)}')
+print(f'A área do círculo de raio = 3 é: {area(r)}')
+print(f'A área do círculo de raio = 3 é: {perimetro(r)}')
+
+print('\nmodo 2\n')
+
+area = round((math.pi * math.pow(r, 2)),2)
+perimetro = round((2 * (math.pi) * r),2)
+
+print(f'A área do círculo de raio = 3 é: {area}')
+print(f'A área do círculo de raio = 3 é: {perimetro}')
+
+
+
+

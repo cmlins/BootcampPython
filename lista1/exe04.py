@@ -5,6 +5,8 @@ print('--- Exercício 4 ---\n')
 def media (x, y, z, t):
     return (x + y + z + t) / 4
 
+print('\nVamos calcular a média aritmética de 4 números: \n')
+
 num1 = float(input('Insira um número: '))
 num2 = float(input('Insira um número: '))
 num3 = float(input('Insira um número: '))

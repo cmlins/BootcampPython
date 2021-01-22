@@ -27,3 +27,17 @@ Aula 006 - 16/01/2021
 - Tuplas
 - Dicionários
 - Algoritmos
+
+Aula 007 - 18/01/2021
+- Acompanhamento de lista
+
+Aula 008 - 19/01/2021
+- Acompanhamento de lista
+
+Aula 009 - 20/01/2021
+- Acompanhamento de lista
+
+Aula 010 - 21/01/2021
+- Acompanhamento de lista
+- Introdução à Programação Orientada à Objetos
+
