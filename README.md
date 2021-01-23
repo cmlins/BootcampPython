@@ -41,3 +41,5 @@ Aula 010 - 21/01/2021
 - Acompanhamento de lista
 - Introdução à Programação Orientada à Objetos
 
+Aula 011 - 22/01/2021
+- Introdução à Programação Orientada à Objetos
