@@ -51,7 +51,3 @@ class Funcoes:
                 break
             else:
                 print('\nEste contato não está na lista.\n')
-
-
-
-
