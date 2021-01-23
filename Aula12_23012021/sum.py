@@ -10,9 +10,11 @@ class Vector:
     def __add__(self,other): 
         return Vector(self.a + other.a, self.b + other.b) 
         
+    def __sub__(self,other): 
+        return Vector(self.a - other.a, self.b - other.b) 
         
 v1 = Vector(2,10) 
 
 v2 = Vector(5,-2) 
 
-print(v1 + v2) 
+print(v1 - v2) 
