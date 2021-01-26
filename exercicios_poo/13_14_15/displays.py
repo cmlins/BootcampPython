@@ -20,10 +20,3 @@ class Displays:
     
     def display_item_escolhido(self, item_escolhido):
         return self.opcoes.get(item_escolhido)
-
-
-# itens = Displays(2)
-
-# itens.display_itens()
-
-# print(itens.display_item_escolhido(2))

@@ -1,6 +1,11 @@
 from pessoa import Pessoa
 from displays import Displays
 
+
+# instanciando um objeto da classe Pessoa
+nome = Pessoa(input("\nOlá!! Insira seu nome: "))
+
+
 # escolher qual programa vai ser executado
 
 while True:
@@ -32,8 +37,6 @@ while True:
     else:
         print("\nVocê não escolheu uma opção válida\n")  
 
-# instanciando um objeto da classe Cliente
-nome = Pessoa(input("\nInsira seu nome: "))
 
 while True:
 

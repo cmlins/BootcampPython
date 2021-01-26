@@ -1,17 +1,15 @@
 from contato import Contato
+# https://docs.python.org/3/tutorial/classes.html
 
 class Funcoes:    
 
-    def __init__(self, agenda_dict):
-        self.agenda_dict = []
-    
     def add_contato (agenda_dict):
         # entrada dos dados
         nome = input('\nInsira o nome do novo contato: ')
         tel = input('Insira o telefone do novo contato: ')
         endereco = input('Insira o endereco do novo contato: ')
 
-        # inserção dos dados no dicionário
+        # inserção dos dados no dicionário e instaciação de um obj Contato
         contato = Contato(nome, tel, endereco)
         agenda_dict.append(contato)
 
@@ -20,6 +18,7 @@ class Funcoes:
         Funcoes.listar_agenda (agenda_dict)
 
         return agenda_dict
+
 
     # função que lista os elementos do dicionário
     def listar_agenda (agenda_dict):
@@ -30,6 +29,7 @@ class Funcoes:
             for item in agenda_dict:
                 print(index, item.nome, item.telefone, item.endereco)
                 index += 1
+                
 
     # função que exclui um elemento dado um item.
     # o dicionário é exibido antes e depois da execução

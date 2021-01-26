@@ -25,10 +25,3 @@ class Dados:
 
     def show_list(self):
         return (self.colecoes.get(self.escolha))
-    
-
-# um = Dados(1)
-
-# print(um.show_list())
-# print(um.keys_numbers())
-# print(um.create_dict ())
