@@ -63,3 +63,7 @@ Aula 016 - 29/01/2021
 - Funções
 - Módulos
 - I / O
+
+Aula 017 - 30/01/2021
+- Módulos
+- I / O
