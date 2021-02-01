@@ -56,14 +56,14 @@ Aula 014 - 26/01/2021
 Aula 015 - 27/01/2021
 - Revisão de Programação Orientada à Objetos
 
-Aula 015 - 28/01/2021
+Aula 016 - 28/01/2021
 - Datetime
 
-Aula 016 - 29/01/2021
+Aula 017 - 29/01/2021
 - Funções
 - Módulos
 - I / O
 
-Aula 017 - 30/01/2021
+Aula 018 - 30/01/2021
 - Módulos
 - I / O

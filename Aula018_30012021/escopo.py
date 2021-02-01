@@ -15,3 +15,5 @@ print(money)
 import time
 
 print(f'dir(time): {dir(time)}')
+
+globals()
