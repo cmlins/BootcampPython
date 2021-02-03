@@ -64,10 +64,15 @@ Aula 017 - 29/01/2021
 - Módulos
 - I / O
 
-<<<<<<< HEAD
 Aula 018 - 30/01/2021
-=======
-Aula 017 - 30/01/2021
 - Módulos
 - I / O
->>>>>>> 1550408c6306bbd0d7f924752d856c38f18f6279
+
+Aula 019 - 01/02/2021
+- Expressões regulares
+- Thread
+
+Aula 020 - 02/02/2021
+- Ambientes virtuais
+- PostgreSQL
+
