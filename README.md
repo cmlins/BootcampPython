@@ -73,3 +73,5 @@ Aula 019 - 01/02/2021
 - Thread
 
 Aula 020 - 02/02/2021
+- Ambientes virtuais
+- PostgreSQL
