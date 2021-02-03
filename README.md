@@ -76,3 +76,6 @@ Aula 020 - 02/02/2021
 - Ambientes virtuais
 - PostgreSQL
 
+Aula 021 - 03/02/2021
+- Modelo Relacional
+
