@@ -67,3 +67,9 @@ Aula 017 - 29/01/2021
 Aula 018 - 30/01/2021
 - Módulos
 - I / O
+
+Aula 019 - 01/02/2021
+- Expressões regulares
+- Thread
+
+Aula 020 - 02/02/2021
