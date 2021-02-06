@@ -74,8 +74,14 @@ Aula 019 - 01/02/2021
 
 Aula 020 - 02/02/2021
 - Ambientes virtuais
-- PostgreSQL
+- Intro PostgreSQL
 
 Aula 021 - 03/02/2021
 - Modelo Relacional
+
+Aula 022 - 04/02/2021
+- Modelo Relacional
+
+Aula 023 - 05/02/2021
+- BD
 
