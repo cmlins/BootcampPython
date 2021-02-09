@@ -1,4 +1,4 @@
-SELECT Funcionario.Nome_funcionario, 
+SELECT 	Funcionario.Nome_funcionario, 
 		Funcao.Nome_funcao, 
 		Pedido.Id_pedido,
 		Cliente.Nome_cliente,
@@ -13,7 +13,9 @@ ON Pedido.Id_cliente = Cliente.Id_cliente
 INNER JOIN Item_compra
 ON Item_compra.Id_pedido = Pedido.Id_pedido
 INNER JOIN Produto
-ON Item_compra.Id_produto = Produto.Id_produto;
+ON Item_compra.Id_produto = Produto.Id_produto
+WHERE Cliente.Nome_cliente = 'Mary'
+AND Pedido.Id_pedido = 1;
 
 
 
