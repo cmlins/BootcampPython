@@ -1,3 +1,10 @@
+'''
+Atividade realizada por:
+Cinthya Lins
+Fabiana Sugamele
+Isa Guaraldo
+'''
+
 #imports das classes de negócio
 from Curso import Curso
 from Aluno import Aluno
@@ -40,34 +47,40 @@ while True:
         sys.exit()
 
     elif opcao_selecionada == 1: #Ver lista de alunos
-        Funcoes.mostrar_pessoas(lista_alunos)
+        Funcoes.mostrar_alunos(lista_alunos)
 
     elif opcao_selecionada == 2: #Incluir um novo aluno
-        Funcoes.incluir_aluno(lista_alunos)        
+        Funcoes.incluir_tipo(opcao_selecionada, lista_alunos)        
         
     elif opcao_selecionada == 3: #Excluir um aluno existente
         Funcoes.excluir_aluno(lista_alunos)
                     
     elif opcao_selecionada == 4: #Ver um aluno
-        Funcoes.detalhar_aluno(lista_alunos)        
+        Funcoes.detalhar_aluno(lista_alunos)      
             
     elif opcao_selecionada == 5: #Ver lista de professor
-        pass
-    elif opcao_selecionada == 6: #Incluir um novo professor
-        pass
-    elif opcao_selecionada == 7: #Excluir um professor existente
-        pass
-    elif opcao_selecionada == 8: #Ver um professor
-        pass
-    elif opcao_selecionada == 9: #Ver lista de cursos
-        pass
-    elif opcao_selecionada == 10: #Incluir um novo curso
-        pass
-    elif opcao_selecionada == 11: #Excluir um curso existente
-        pass
-    elif opcao_selecionada == 12: #Ver um curso
-        pass
+        Funcoes.mostrar_professores(lista_professores)
 
+    elif opcao_selecionada == 6: #Incluir um novo professor
+        Funcoes.incluir_tipo(opcao_selecionada, lista_professores)
+
+    elif opcao_selecionada == 7: #Excluir um professor existente
+        Funcoes.excluir_professor(lista_professores)
+        
+    elif opcao_selecionada == 8: #Ver um professor
+        Funcoes.detalhar_professor(lista_professores)
+       
+    elif opcao_selecionada == 9: #Ver lista de cursos
+        Funcoes.mostrar_cursos(lista_cursos)
+
+    elif opcao_selecionada == 10: #Incluir um novo curso
+        Funcoes.incluir_tipo(opcao_selecionada, lista_cursos)
+        
+    elif opcao_selecionada == 11: #Excluir um curso existente
+        Funcoes.excluir_curso(lista_cursos)
+
+    elif opcao_selecionada == 12: #Ver um curso
+        Funcoes.detalhar_curso(lista_cursos)
 
 
 

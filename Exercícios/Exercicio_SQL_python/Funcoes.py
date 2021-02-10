@@ -2,15 +2,7 @@ from Professor import Professor
 from Aluno import Aluno
 from Curso import Curso
 import psycopg2
-
-connection = psycopg2.connect(user="postgres",
-                                  password="admin",
-                                  host="127.0.0.1",
-                                  port="5432",
-                                  database="Escola")
-
-# Create a cursor to perform database operations
-cursor = connection.cursor()
+from config import config
 
 class Funcoes:
 
@@ -194,16 +186,31 @@ class Funcoes:
 
     def inserir_tipo(opcao, lista):
         if (opcao == 2):
-            sql = """INSERT INTO Aluno(Nome_aluno, Periodo) VALUES(%s, %s);"""
-            nome_aluno = input("Digite o nome do Aluno\n")
-            # matricula_aluno = input("Digite a matrícula do Aluno\n")
-            periodo_aluno = input("Digite o número do documento\n")
-            cursor.execute(sql, (nome_aluno, periodo_aluno) )
-            aluno = cursor.fetchone()[1]
-            print(f'aluno: {aluno}')
-            # aluno = Aluno(nome=nome_aluno,documento=documento_aluno,matricula=matricula_aluno) #Incluindo o documento no momento do construtor
-            # lista.append(aluno) #Insere um aluno na lista
-            print(f"O aluno {aluno} foi inserido!")  #Mostra para o usuário que o append foi feito
+            sql = """INSERT INTO Aluno (Id_aluno, Nome_aluno, Periodo) VALUES(DEFAULT, %s, %s);"""
+            conn = None
+            # aluno_id = None
+            try:
+                params = config()
+                conn = psycopg2.connect(**params)
+                cur = conn.cursor()
+
+                nome_aluno = input("Digite o nome do Aluno\n")
+                periodo = input("Digite o período do Aluno\n")
+
+                cur.execute(sql, (nome_aluno, periodo))
+
+                # aluno_id = cur.fetchone()[0]
+
+                conn.commit()
+
+                cur.close()
+
+                print(f"O aluno foi inserido!")  #Mostra para o usuário que o append foi feito
+            except (Exception, psycopg2.DatabaseError) as error:
+                print(error)
+            finally:
+                if conn is not None:
+                    conn.close()
         elif (opcao == 6):
             disciplina_professor = input('Digite a disciplina dada pelo professor: \n')
             professor = Professor(disciplina_professor)
