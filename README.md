@@ -92,3 +92,11 @@ Aula 025 - 08/02/2021
 - BD
 - psycopg2
 
+Aula 026 - 09/02/2021
+- Prática BD
+
+Aula 027 - 10/02/2021
+- SQLAlchemy
+
+Aula 028 - 11/02/2021
+- Introdução a FLASK
