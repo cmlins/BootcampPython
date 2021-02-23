@@ -9,7 +9,7 @@ def index():
 def haha():
     return "hahaha"
     
-@app.route('/confirmacao')
+@app.route('/confirmation')
 def confirmation():
     return render_template('confirmation.html')
 

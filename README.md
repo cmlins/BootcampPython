@@ -100,3 +100,9 @@ Aula 027 - 10/02/2021
 
 Aula 028 - 11/02/2021
 - Introdução a FLASK
+
+Aula 029 - 12/02/2021
+- FLASK
+
+Aula 030 - 22/02/2021
+- FLASK
