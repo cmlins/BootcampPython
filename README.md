@@ -109,5 +109,8 @@ Aula 030 - 22/02/2021
 
 Aula 031 - 23/02/2021
 - FLASK
-    - Formulário
+    - Formulário --> Arquivos na Aula028
+
+Aula 032 - 24/02/2021
+- FLASK --> Arquivos na Aula028
     
