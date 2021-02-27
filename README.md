@@ -114,3 +114,6 @@ Aula 031 - 23/02/2021
 Aula 032 - 24/02/2021
 - FLASK --> Arquivos na Aula028
     
+Aula 033 - 26/02/2021
+- FLASK --> Arquivos na Aula028
+- SQLite
